@@ -1,0 +1,77 @@
+/* frontend/src/components/Footer.css - Ultra Compact Version */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 2rem;
+    padding: 1rem 0 0;
+    /* Even smaller padding */
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* Even smaller columns */
+    gap: 1rem;
+    /* Smaller gap */
+    max-width: 1000px;
+    /* Even narrower */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section h4 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    /* Smaller heading */
+}
+
+.footer-section p {
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+    font-size: 0.85rem;
+    /* Even smaller text */
+}
+
+.footer-section ul li {
+    margin-bottom: 0.3rem;
+}
+
+.footer-section ul li a {
+    font-size: 0.85rem;
+}
+
+.footer-bottom {
+    background-color: #1a252f;
+    padding: 0.6rem 0;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-bottom p {
+    font-size: 0.75rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 0.8rem 0 0;
+    }
+
+    .footer-content {
+        gap: 0.8rem;
+    }
+
+    .footer-section {
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section h4 {
+        font-size: 0.95rem;
+    }
+
+    .footer-bottom {
+        padding: 0.5rem 0;
+        margin-top: 0.8rem;
+    }
+}
