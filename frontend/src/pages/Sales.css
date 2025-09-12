@@ -1,0 +1,19 @@
+/* frontend/src/pages/Sales.css */
+.sales-page {
+    padding: 2rem;
+}
+
+.sales-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sales-header h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.sales-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}

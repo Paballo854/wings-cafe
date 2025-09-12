@@ -1,0 +1,127 @@
+{
+  "products": [
+    {
+      "id": 1757423706068,
+      "name": "Hot chocolate",
+      "description": "Rich chocolate drink ",
+      "category": "Hot Beverages",
+      "price": 20,
+      "quantity": 129,
+      "lowStockAlert": false
+    },
+    {
+      "id": 1757423800784,
+      "name": "Green Tea",
+      "description": "Antioxidant-rich tea",
+      "category": "Hot Beverages",
+      "price": 18,
+      "quantity": 3,
+      "lowStockAlert": true
+    },
+    {
+      "id": 1757423935122,
+      "name": "Americano",
+      "description": "Espresso with hot water",
+      "category": "Hot Beverages",
+      "price": 29.99,
+      "quantity": 40,
+      "lowStockAlert": false
+    },
+    {
+      "id": 1757424084028,
+      "name": "English Break fast Tea",
+      "description": "Classic Black Tea",
+      "category": "Hot Beverages",
+      "price": 18,
+      "quantity": 60,
+      "lowStockAlert": false
+    },
+    {
+      "id": 1757424181793,
+      "name": "Latte",
+      "description": "Espresso with steamed milk",
+      "category": "Hot Beverages",
+      "price": 30,
+      "quantity": 93,
+      "lowStockAlert": false
+    }
+  ],
+  "customers": [],
+  "sales": [
+    {
+      "id": 1757424290815,
+      "customerId": null,
+      "items": [
+        {
+          "productId": 1757423706068,
+          "quantity": 1,
+          "price": 20
+        }
+      ],
+      "totalAmount": 20,
+      "paymentMethod": "card",
+      "saleDate": "2025-09-09T13:24:50.815Z",
+      "status": "completed"
+    },
+    {
+      "id": 1757434650790,
+      "customerId": null,
+      "items": [
+        {
+          "productId": 1757423800784,
+          "quantity": 1,
+          "price": 18
+        }
+      ],
+      "totalAmount": 18,
+      "paymentMethod": "cash",
+      "saleDate": "2025-09-09T16:17:30.790Z",
+      "status": "completed"
+    },
+    {
+      "id": 1757447740009,
+      "customerId": null,
+      "items": [
+        {
+          "productId": 1757423706068,
+          "quantity": 3,
+          "price": 20
+        }
+      ],
+      "totalAmount": 60,
+      "paymentMethod": "mobile",
+      "saleDate": "2025-09-09T19:55:40.009Z",
+      "status": "completed"
+    },
+    {
+      "id": 1757488329534,
+      "customerId": null,
+      "items": [
+        {
+          "productId": 1757423706068,
+          "quantity": 1,
+          "price": 20
+        }
+      ],
+      "totalAmount": 20,
+      "paymentMethod": "cash",
+      "saleDate": "2025-09-10T07:12:09.534Z",
+      "status": "completed"
+    },
+    {
+      "id": 1757566955171,
+      "customerId": null,
+      "items": [
+        {
+          "productId": 1757424181793,
+          "quantity": 7,
+          "price": 30
+        }
+      ],
+      "totalAmount": 210,
+      "paymentMethod": "mobile",
+      "saleDate": "2025-09-11T05:02:35.171Z",
+      "status": "completed"
+    }
+  ]
+}
