@@ -1,9 +1,10 @@
 // frontend/src/pages/Dashboard.js
 import React, { useState, useEffect } from 'react';
-import { fetchProducts } from '../services/api';
-import { fetchSales } from '../services/salesApi';
-import { fetchCustomers } from '../services/customerApi';
+import { fetchProducts } from '../services/api'; // Only import from api.js
 import './Dashboard.css';
+
+// Your Render backend URL
+const API_BASE_URL = 'https://wings-cafe-m8m9.onrender.com/api';
 
 const Dashboard = () => {
   const [stats, setStats] = useState({
@@ -15,6 +16,10 @@ const Dashboard = () => {
   });
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  // Add fetch functions for sales and customers using your existing API base URL
+  const fetchSales = () => fetch(`${API_BASE_URL}/sales`).then(res => res.json());
+  const fetchCustomers = () => fetch(`${API_BASE_URL}/customers`).then(res => res.json());
 
   useEffect(() => {
     loadDashboardData();
@@ -28,11 +33,12 @@ const Dashboard = () => {
         fetchCustomers()
       ]);
 
-      const productsData = productsResponse.data;
-      const sales = salesResponse.data;
-      const customers = customersResponse.data;
+      // Handle different response formats (axios vs fetch)
+      const productsData = productsResponse.data || productsResponse;
+      const sales = salesResponse.data || salesResponse;
+      const customers = customersResponse.data || customersResponse;
 
-      const totalRevenue = sales.reduce((sum, sale) => sum + sale.totalAmount, 0);
+      const totalRevenue = sales.reduce((sum, sale) => sum + (sale.totalAmount || 0), 0);
 
       setProducts(productsData);
       setStats({
