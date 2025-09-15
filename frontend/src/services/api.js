@@ -1,9 +1,9 @@
 // frontend/src/services/api.js - TEMPORARY VERSION (remove auth)
 import axios from 'axios';
 
-// Create an axios instance with the base URL of our backend
+// Create an axios instance with the base URL of our backend on Render
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://wings-cafe-m8m9.onrender.com/api', // updated URL
 });
 
 // API functions for products
